@@ -1,0 +1,48 @@
+.memory{
+    margin-top: 200px;
+    span{
+        color: $primary;
+    }
+    @media (max-width: $breakpoint-lg) {
+        margin-top: 80px;
+    }
+    @media (max-width: $breakpoint-md) {
+        margin-top: 40px;
+    }
+}
+.memory-content{
+    display: flex;
+    gap: 148px;
+    @media (max-width: $breakpoint-lg) {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+}
+.memory__textbox{
+    padding-top: 48px;
+    display: flex;
+    flex-direction: column;
+    p{
+        margin-top: 28px;
+    }
+
+}   
+.memory__textbox-button{
+    padding-top: 48px;
+}
+.but{
+    @media (max-width: $breakpoint-lg) {
+        display: none;
+    }
+}
+.memory__image{
+    img{
+        @media (max-width: $breakpoint-sm) {
+            max-width: 335px;
+            max-height: 321px;
+        }
+    } 
+}

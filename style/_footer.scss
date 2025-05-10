@@ -1,0 +1,125 @@
+.footer {
+    padding-bottom: 100px;
+    @media (max-width: $breakpoint-md) {
+        padding-bottom: 40px;
+    }
+}
+
+.footer_header {
+    margin-top: 100px;
+    padding-top: 48px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px $border-secondary-color solid;
+    align-items: center;
+
+    @media (max-width: $breakpoint-lg) {
+        margin-top: 80px;
+        flex-direction: column;
+        gap: 24px;
+        padding-bottom: 50px;
+    }
+
+    @media (max-width: $breakpoint-md) {
+        margin-top: 60px;
+        padding-top: 0;
+    }
+    @media (max-width: $breakpoint-sm) {
+        align-items:start;
+    }
+
+    h2 {
+        @media (max-width: $breakpoint-md) {
+            text-align: center;
+        }
+        @media (max-width: $breakpoint-md) {
+            text-align: left;
+        }
+    }
+}
+
+    .footer__content {
+        display: flex;
+        position: relative;
+
+        @media (max-width: $breakpoint-md) {
+            position: static;
+            flex-direction: column;
+        }
+    }
+
+    .footer__content-text {
+        padding-top: 80px;
+
+        @media (max-width: $breakpoint-md) {
+            padding-top: 48px;
+        }
+
+        h4 {
+            color: $primary;
+            letter-spacing: 2px;
+            font-family: "Gilda Display", sans-serif;
+            font-weight: 600;
+        }
+
+        p {
+            padding-top: 20px;
+
+            @media (max-width: $breakpoint-md) {
+                padding-top: 24px;
+            }
+        }
+    }
+
+    .footer__content-text_links {
+        padding-top: 48px;
+        display: flex;
+        gap: 50px;
+        align-items: center;
+
+        @media (max-width: $breakpoint-md) {
+            padding-top: 24px;
+        }
+
+        a:hover {
+            transform: scale(1.1);
+            transition: 200ms;
+        }
+
+        a:hover {
+            opacity: .7;
+            transition: 200ms;
+        }
+
+    }
+
+    .footer__content-navigation_list {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        @media (max-width: $breakpoint-md) {
+            position: static;
+        }
+
+        display: flex;
+        gap: 60px;
+        padding-bottom: 6px;
+        @media (max-width: $breakpoint-sm) {
+            gap: 27px;
+        }
+
+        @media (max-width: $breakpoint-md) {
+            position: static;
+            justify-content: space-between;
+            padding-top: 24px;
+        }
+
+        a {
+            color: $gray;
+
+        }
+
+
+
+    }

@@ -1,0 +1,182 @@
+.cards {
+    margin-top: 100px;
+
+    @media (max-width: $breakpoint-lg) {
+        margin-top: 80px;
+    }
+
+    @media (max-width: $breakpoint-md) {
+        margin-top: 40px;
+    }
+}
+
+.cards-text {
+    display: flex;
+
+    @media (max-width: $breakpoint-lg) {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    @media (max-width: $breakpoint-sm) {
+        text-align: left;
+    }
+
+
+}
+.place-swiper{
+    display: none;
+    @media (max-width: $breakpoint-sm) {
+        display: block;
+        display: flex;
+        margin-top: 40px;
+    }
+
+}
+.cards-place {
+    margin-top: 60px;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(3, 380px);
+    @media (max-width: $breakpoint-xl) {
+        display: grid;
+        grid-template-columns: repeat(3, 320px);
+    }
+
+    @media (max-width: $breakpoint-lg) {
+        display: grid;
+        grid-template-columns: repeat(2, 340px);
+    }
+
+    @media (max-width: $breakpoint-md) {
+        display: grid;
+        grid-template-columns: repeat(2, 265px);
+        gap: 10px;
+    }
+    @media (max-width: $breakpoint-sm) {
+        display: none;
+    }
+
+
+}
+
+.cards-place__item:hover {
+   
+}
+
+.cards-place__item-text {
+    @media (max-width: $breakpoint-sm) {
+        padding: 15px;
+    }
+    @media (max-width: $breakpoint-sm) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.cards-place__item-textloc {
+    @media (max-width: $breakpoint-sm) {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-top: 5px;
+        margin-right: 25px;
+        color: #666;
+    }
+}
+
+.cards-place__item {
+    background-color: $white;
+    padding: 16px;
+    border: 1px solid $border-color;
+    box-shadow: $box-shadow;
+
+    @media (max-width: $breakpoint-md) {
+        display: flex;
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        @media (max-width: $breakpoint-xl) {
+            max-width: 285px;
+        }
+        @media (max-width: $breakpoint-lg) {
+            max-width: 305px;
+        }
+
+        @media (max-width: $breakpoint-md) {
+            max-width: 245px;
+        }
+    }
+}
+
+.cards-place__item-text {
+    padding-top: 28px;
+
+}
+
+.cards__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    button:hover {
+        opacity: .7;
+        transition: 200ms;
+    }
+
+    @media (max-width: $breakpoint-lg) {
+        margin-top: 10px;
+    }
+
+    @media (max-width: $breakpoint-sm) {
+        align-items: start;
+    }
+}
+
+.cards-text__form {
+    margin-top: 24px;
+    max-width: 470px;
+    border-radius: 100px;
+    border: 1px $border-secondary-color solid;
+    padding: 8px 8px 8px 16px;
+    background-color: #FAFAFA;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    gap: 8px;
+
+    label {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+    }
+
+}
+
+.cards-text__input {
+    line-height: 32px;
+    font-size: 18px;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 400;
+    color: #A6A6A6;
+}
+
+.button_icon {
+    width: 55px;
+    height: 48px;
+    background-color: $background-button;
+    border-radius: 50%;
+
+}
+
+.cards-place__item-textloc {
+    padding-top: 8px;
+    display: flex;
+    gap: 6px;
+}
