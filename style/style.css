@@ -450,7 +450,6 @@ a {
     display: flex;
     padding: 10px;
     flex-direction: column;
-    align-items: center;
   }
 }
 @media (max-width: 1250px) {
@@ -477,6 +476,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .cards__form button:hover {
   opacity: 0.7;
@@ -495,7 +495,7 @@ a {
 
 .cards-text__form {
   margin-top: 24px;
-  max-width: 470px;
+  width: 470px;
   border-radius: 100px;
   border: 1px #D9D9D9 solid;
   padding: 8px 8px 8px 16px;
@@ -505,6 +505,11 @@ a {
   justify-content: space-between;
   overflow: hidden;
   gap: 8px;
+}
+@media (max-width: 768px) {
+  .cards-text__form {
+    max-width: 340px;
+  }
 }
 .cards-text__form label {
   display: flex;
@@ -519,6 +524,8 @@ a {
   font-family: "Urbanist", sans-serif;
   font-weight: 400;
   color: #A6A6A6;
+  background: transparent;
+  border: none;
 }
 
 .button_icon {
@@ -532,6 +539,13 @@ a {
   padding-top: 8px;
   display: flex;
   gap: 6px;
+}
+
+@media (max-width: 768px) {
+  .cards-place__item-image {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .choose {
@@ -821,4 +835,5 @@ a {
 }
 .footer__content-navigation_list a {
   color: #595959;
+  font-family: "Urbanist", sans-serif;
 }/*# sourceMappingURL=style.css.map */
